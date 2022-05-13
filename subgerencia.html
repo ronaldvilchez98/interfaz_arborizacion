@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Menú</title>
+</head>
+<body>
+  <h1>Menu Principal</h1>
+  <nav>
+    <ul>
+      <li><a href="http://localhost/interfaz_arborizacion/urbanista.html">Urbanista</a></li>
+      <li><a href="http://localhost/interfaz_arborizacion/subgerencia.html">Sub gerencia</a></li>
+      <li><a href="http://localhost/interfaz_arborizacion/jardinero.html">Jardinero</a></li>
+      <li><a href="http://localhost/interfaz_arborizacion/poblador.html">Poblador</a></li>
+      <li><a href="http://localhost/interfaz_arborizacion/estudiante.html">Estudiante voluntario</a></li>
+    </ul>
+  </nav>
+</body>
+<div class="datos_alumno">
+  <h2>Datos del alumno voluntario</h2>
+  <form action="" class="formulario">
+
+    <label for="cliente" class="formulario__label">Nombre y apellidos</label>
+    <input id="cliente" type="text" class="formulario__input" placeholder="Ingresar el nombre completo"/>
+    <label for="cliente" class="formulario__label">DNI</label>
+    <input id="cliente" type="text" class="formulario__input" maxlength="8" pattern="[0-9]{8}" placeholder="Ingresar el número de dni"/>
+    <label for="cliente" class="formulario__label">Edad</label>
+    <input type="number" class="formulario__input" id="tentacles" name="tentacles" min="1" max="70">
+    
+    <label for="cliente" class="formulario__label">Departamento</label>
+    <select class="formulario__input" id="departamento">
+    </select>
+    <label for="cliente" class="formulario__label">Provincia</label>
+    <select class="formulario__input" id="provincia">
+    </select>
+    <label for="cliente" class="formulario__label">Distrito</label>
+    <select class="formulario__input" id="distrito">
+    </select>
+
+    <div class="formulario__input ocultar_imput" id="ubigeo"></div>    
+       
+    <label for="fecha" class="formulario__label">Fecha de nacimiento</label>
+    <input id="fecha" type="date" class="formulario__input" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
+    <label for="cliente" class="formulario__label">Ingresar correo electrónico</label>
+    <input id="cliente" type="text" class="formulario__input" placeholder="Ingresar el correo electrónico"/>
+    <label for="cliente" class="formulario__label">Teléfono</label>
+    <input id="cliente" type="text" class="formulario__input" maxlength="15" pattern="[0-9]{8}" placeholder="Ingresar el número del teléfono"/>
+    <div id="respuesta"></div>
+
+    <button id="submit" class="formulario__submit">Enviar datos</button>
+  </form>
+</div>
+
+<script src="ubigeo.js"></script>
+<script src="script.js"></script>
+</html>

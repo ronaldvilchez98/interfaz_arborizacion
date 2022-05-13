@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Menú</title>
+</head>
+<body>
+  <h1>Menu Principal</h1>
+  <nav>
+    <ul>
+      <li><a href="http://localhost/interfaz_arborizacion/urbanista.html">Urbanista</a></li>
+      <li><a href="http://localhost/interfaz_arborizacion/subgerencia.html">Sub gerencia</a></li>
+      <li><a href="http://localhost/interfaz_arborizacion/jardinero.html">Jardinero</a></li>
+      <li><a href="http://localhost/interfaz_arborizacion/poblador.html">Poblador</a></li>
+      <li><a href="http://localhost/interfaz_arborizacion/estudiante.html">Estudiante voluntario</a></li>
+    </ul>
+  </nav>
+</body>
+
+<div class="datos_alumno">
+  <h2>Alumno</h2>
+  <form action="" class="formulario">
+    <label for="cliente" class="formulario__label">Buscar por DNI</label>
+    <input id="cliente" type="text" class="formulario__input" placeholder="Ingresar el DNI del estudiante"/>
+    <button id="submit" class="formulario__submit">Buscar</button>
+
+    <table>
+      <caption>Alumnos</caption>
+      <thead>
+        <tr>
+          <th scope="col">DNI</th>
+          <th scope="col">Apelliidos y Nombres</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Period</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Account">72928822</td>
+          <td data-label="Due Date">Vidaure Miranda Ana Cristina</td>
+          <td data-label="Amount">$1,190</td>
+          <td data-label="Period">03/01/2016 - 03/31/2016</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Account">70918362</td>
+          <td data-label="Due Date">Soliz Arroyo Julisa</td>
+          <td data-label="Amount">$2,443</td>
+          <td data-label="Period">02/01/2016 - 02/29/2016</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Account">80252027</td>
+          <td data-label="Due Date">Torres Cepeda Gian</td>
+          <td data-label="Amount">$1,181</td>
+          <td data-label="Period">02/01/2016 - 02/29/2016</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Acount">72945511</td>
+          <td data-label="Due Date">Alban Acosta Marcelo</td>
+          <td data-label="Amount">$842</td>
+          <td data-label="Period">01/01/2016 - 01/31/2016</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <label for="cliente" class="formulario__label">DNI</label>
+    <input id="cliente" type="text" class="formulario__input" maxlength="8" pattern="[0-9]{8}" placeholder="Ingresar el número de dni"/>
+    <label for="cliente" class="formulario__label">Edad</label>
+    <input type="number" class="formulario__input" id="tentacles" name="tentacles" min="1" max="70">
+    <label for="fecha" class="formulario__label">Fecha de nacimiento</label>
+    <input id="fecha" type="date" class="formulario__input" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
+    <label for="cliente" class="formulario__label">Ingresar correo electrónico</label>
+    <input id="cliente" type="text" class="formulario__input" placeholder="Ingresar el correo electrónico"/>
+    <label for="cliente" class="formulario__label">Teléfono</label>
+    <input id="cliente" type="text" class="formulario__input" maxlength="15" pattern="[0-9]{8}" placeholder="Ingresar el número del teléfono"/>
+    <div id="respuesta"></div>
+
+    <button id="submit" class="formulario__submit">Enviar datos</button>
+  </form>
+</div>
+</html>
